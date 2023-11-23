@@ -97,56 +97,62 @@
                         <p class="d-inline-block bg-dark text-primary py-1 px-4">Contact Us</p>
                         <h1 class="text-uppercase mb-4">WANT TO BOOK AN APPOINTMENT? Please Contact Us!</h1>
                         <!-- <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://femi-favour.vercel.app//contact-form">Download Now</a>.</p> -->
-                        <form>
+                        <form action="https://formspree.io/f/xgejbgdw" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control bg-transparent" id="name" name="name" placeholder="Your Name">
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control bg-transparent" id="email" name="email" placeholder="Your Email">
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="datetime-local" class="form-control bg-transparent" id="date-time" placeholder="Date and Time">
+                                        <input type="tel" class="form-control bg-transparent" id="phone" name="phone" placeholder="Your Phone Number">
+                                        <label for="phone">Your Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="datetime-local" class="form-control bg-transparent" id="date-time" name="date-time" placeholder="Date and Time">
                                         <label for="date-time">Select Date and Time</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="serviceType">Select Type of Service</label>
-                                    <select class="form-select" id="serviceType">
-                                        <option value="service1">₦3,000 - HairCut</option>
-                                        <option value="service2">₦5,000- HAIRCUT & DYE</option>
-                                        <option value="service3">₦3,500 - CARVE & DYE</option>
-                                        <option value="service3">₦10,000 - ROUGH CURL</option>
-                                        <option value="service3">₦10,000 - HAIR TINT</option>
-                                        <option value="service3">₦15,000 - DREADLOCK</option>
-                                        <option value="service3">₦8,000 - TREATING OF DREADLOCK</option>
-                                        <option value="service3">₦8,000 - RELOCKING OF DREADLOCK</option>
-                                        <option value="service3">₦200,000 - DREADLOCK EXTENTION</option>
+                                    <select class="form-select" id="serviceType" name="serviceType">
+                                        <option value="HairCut">₦3,000 - HairCut</option>
+                                        <option value="HAIRCUT & DYE">₦5,000- HAIRCUT & DYE</option>
+                                        <option value="CARVE & DYE">₦3,500 - CARVE & DYE</option>
+                                        <option value="ROUGH CURL">₦10,000 - ROUGH CURL</option>
+                                        <option value="HAIR TINT">₦10,000 - HAIR TINT</option>
+                                        <option value="DREADLOCK">₦15,000 - DREADLOCK</option>
+                                        <option value="TREATING OF DREADLOCK">₦8,000 - TREATING OF DREADLOCK</option>
+                                        <option value="RELOCKING OF DREADLOCK">₦8,000 - RELOCKING OF DREADLOCK</option>
+                                        <option value="DREADLOCK EXTENTION">₦200,000 - DREADLOCK EXTENTION</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="location" placeholder="Your Location">
+                                        <input type="text" class="form-control bg-transparent" id="location" name="location"  placeholder="Your Location">
                                         <label for="location">Address</label>
                                     </div>
                                 </div>
-                                NOTE: Price may vary due to Location
+                                <p>NOTE: Price may vary due to Location</p>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control bg-transparent" id="subject" name="subject" placeholder="Subject">
                                         <label for="subject">Special Request</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control bg-transparent" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <textarea class="form-control bg-transparent" placeholder="Leave a message here" id="message" name="message" style="height: 100px"></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
